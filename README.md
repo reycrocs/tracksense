@@ -10,6 +10,7 @@ TrackSense is composed of two interconnected components:
 
 ### 🦯 Smart Blind Stick
 - **Obstacle Detection**: Employs ultrasonic sensors to identify obstacles and notify the user via vibration and buzzer.
+- **Edge Detection**: Utilizes infrared sensors to detect the edges of platforms, stairs, or curbs, providing additional safety by alerting the user when they approach dangerous drop-offs.
 - **SOS Functionality**: An emergency button instantly alerts a designated guardian through a connected mobile application.
 - **GPS Live Tracking**: Enables guardians to monitor the real-time location of their visually impaired loved ones for added peace of mind.
 - **Weather Updates**: Delivers real-time weather conditions to help users prepare for the day.
