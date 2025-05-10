@@ -18,12 +18,12 @@ The Smart Glasses are designed to provide real-time **scene recognition** and **
 
 ## 📁 Contents
 
-/smart_glasses
-├── firmware/ # Microcontroller code (ESP32-CAM)
-├── schematics/ # Circuit diagrams and wiring schematics
-├── parts_list.md # Bill of Materials (BOM)
-├── notes.md # Setup notes or build instructions
-└── README.md # This file
+- `/smart_glasses/`
+  - `firmware/`          # Microcontroller code (ESP32-CAM)
+  - `schematics/`        # Circuit diagrams and wiring schematics
+  - `parts_list.md`      # Bill of Materials (BOM)
+  - `notes.md`           # Setup notes or build instructions
+  - `README.md`          # This file
 
 ---
 

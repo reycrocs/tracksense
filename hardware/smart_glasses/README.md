@@ -18,12 +18,12 @@ The smart stick is designed to assist visually impaired individuals by detecting
 
 ## 📁 Contents
 
-/smart_stick
-├── firmware/ # Microcontroller code (ESP32/C++)
-├── schematics/ # Circuit diagrams and wiring schematics
-├── parts_list.md # Bill of Materials (BOM)
-├── notes.md # Build notes or setup instructions
-└── README.md # This file
+- `/smart_stick/`
+  - `firmware/`          # Microcontroller code (ESP32/C++)
+  - `schematics/`        # Circuit diagrams and wiring schematics
+  - `parts_list.md`      # Bill of Materials (BOM)
+  - `notes.md`           # Build notes or setup instructions
+  - `README.md`          # This file
 
 ---
 
