@@ -7,11 +7,11 @@ This folder contains all documentation related to the **TrackSense** project. It
 ## 📁 Contents
 
 /documents
-├── proposal/ # Project proposal and concept paper
-├── reports/ # Progress reports, final report, and documentation
-├── presentations/ # Pitch decks and slide presentations
-├── user_manual/ # User and installation guides
-└── README.md # This file
+├── proposal/          # Project proposal and concept paper
+├── reports/           # Progress reports, final report, and documentation
+├── presentations/     # Pitch decks and slide presentations
+├── user_manual/       # User and installation guides
+└── README.md          # This file
 
 ---
 
