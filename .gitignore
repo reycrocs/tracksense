@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+.env
+*.sqlite3
+instance/
+*.log
+
+# Node / Flask
+node_modules/
+build/
+dist/
+*.egg-info/
+*.db
+.DS_Store
+
+# Arduino / PlatformIO / ESP32
+*.elf
+*.bin
+*.hex
+*.map
+.pio/
+.vscode/
+*.ino.*
+*.ino.d
+*.d
+*.o
+*.out
+
+# Android Studio
+.gradle/
+.idea/
+*.iml
+build/
+captures/
+local.properties
+*.keystore
+*.jks
+
+# Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+pubspec.lock
+ios/Pods/
+android/.gradle/
+android/app/build/
+web/.dart_tool/
+
+# VS Code
+.vscode/
+
+# Mac/Linux
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Firebase or API Keys
+firebase.json
+serviceAccountKey.json
+*.key
+*.pem
+*.p12
+*.crt
+credentials.json
