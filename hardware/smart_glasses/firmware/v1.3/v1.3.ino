@@ -31,7 +31,9 @@
 #define PCLK_GPIO_NUM     22
 
 #define FLASH_LED_PIN     4
-
+#define BUTTON1_PIN       14
+#define BUTTON2_PIN       2
+ 
 //=========================== WiFi & Interval
 const char* ssid = "Alba Extender 24";
 const char* password = "***********";
@@ -134,7 +136,7 @@ void sendPhotoToMyAPI() {
             if (len > 0) {
               len -= c;
             }
-            Serial.printf("Downloaded: %d bytes\n", totalBytes);
+            //Serial.printf("Downloaded: %d bytes\n", totalBytes);
           }
           delay(1);
         }
@@ -190,6 +192,10 @@ void setup() {
   WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0); // Disable brownout
   Serial.begin(115200);
   delay(1000);
+
+  // Initialize buttons
+  pinMode(BUTTON1_PIN, INPUT_PULLUP);
+  pinMode(BUTTON2_PIN, INPUT_PULLUP);
 
   // Initialize SPIFFS
   if (!SPIFFS.begin(true)) {
@@ -252,11 +258,24 @@ void setup() {
   Serial.println("Camera ready. Testing connection...");
   testConnection();
   delay(2000);
-  sendPhotoToMyAPI();
+  //sendPhotoToMyAPI();
 }
 
 //=========================== Loop
 void loop() {
+  // Check button states
+  if (digitalRead(BUTTON1_PIN) == LOW) {
+    Serial.println("Button 1 pressed");
+    sendPhotoToMyAPI();
+    delay(2000); // Simple debounce
+  }
+  
+  if (digitalRead(BUTTON2_PIN) == LOW) {
+    Serial.println("Button 2 pressed");
+    Serial.println("Fetch weather API");
+    delay(200); // Simple debounce
+  }
+
   unsigned long currentMillis = millis();
   if (currentMillis - previousMillis >= Interval) {
     previousMillis = currentMillis;
